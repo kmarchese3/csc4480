@@ -2,7 +2,7 @@
 CREATE TABLE Games(
     Start_time varchar2(5),
     Field_loc varchar2(25),
-    Field_num varchar2(25), 
+    Field_num int, 
     Game_date Date,
     Time_limit int,
     Umpire varchar2(25),
