@@ -9,7 +9,7 @@ CREATE TABLE Games(
     Score varchar2(10),
     Home_team varchar2(25),
     Away_team varchar2(25),
-    primary key (Start_time, Field_lod, FIeld_num)
+    primary key (Start_time, Field_lod, Field_num)
 );
 
 -- Teams Table
@@ -23,7 +23,27 @@ CREATE TABLE Teams(
 );
 
 -- Coaches Table
+CREATE TABLE Coaches(
+    Coaches_name varchar2(25),
+    Years_experience int,
+    Manager_name varchar2(25),
+    Teams_name varchar2(25)
+    primary key (Coaches_name),
+    foreign key(Teams_name) references Teams(Team_Name)
+);
+
 -- Vendors Table
+CREATE TABLE Vendors(
+    Vendor_name varchar2(25),
+    price int,
+    product varchar2(25),
+    location_headquarters varchar2(25), 
+    Game_start varchar2(5),
+    Game_location varchar2(25),
+    Game_field int,
+    primary key (Vendors_name),
+    foreign key(Start_time, Field_loc, Field_num) references Games(Game_start, Game_loc, Game_field)
+);
 
 -- Nathaniel Bevins
 -- Create Player Table
