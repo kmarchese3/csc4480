@@ -47,3 +47,19 @@ INSERT INTO Vendors VALUES
 INSERT INTO Vendors VALUES
   ('Burger King', 4.00, 'Fries', 'New York City, NY', '11:30', '892 Main St, Baltimore, MD', 1);
 
+--Nathaniel Bevins
+--Insert Statements for Players
+INSERT INTO Players VALUES
+  (31, 'Cedric Mullins', 28, 'CF', 'Marlins');
+INSERT INTO Players VALUES
+  (5, 'Brooks Robinson', 29, '3B', 'Bees');
+INSERT INTO Players VALUES
+  (3, 'Babe Ruth', 31, 'P', 'Cougars');
+
+--Insert Statements for Team_Plays
+INSERT INTO Team_Plays VALUES
+  ('Cougars', '9:00', '123 Springfield Ave, Springfield, NJ', 3, '10-MAR-2023' );
+INSERT INTO Team_Plays VALUES
+  ('Bees', '10:00', '456 West Ave, Houston, TX', 2, '12-OCT-2022');
+INSERT INTO Team_Plays VALUES
+  ('Marlins', '11:30', '892 Main St, Baltimore, MD', 1, '14-APR-2023');
