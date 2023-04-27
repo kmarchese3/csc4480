@@ -30,7 +30,7 @@ CREATE TABLE Coaches(
     Teams_name varchar2(25),
     Position varchar2(25),
     primary key (Coaches_name),
-    foreign key(Teams_name) references Teams(Team_Name)
+    foreign key(Teams_name) references Teams(Team_name)
 );
 
 -- Vendors Table
@@ -42,7 +42,7 @@ CREATE TABLE Vendors(
     Game_start varchar2(5),
     Game_location varchar2(25),
     Game_field int,
-    Game_date date,
+    Game_date Date,
     primary key (Vendor_name),
     foreign key (Game_start, Game_loc, Game_field, Game_date) references Games(Start_time, Field_loc, Field_num, Game_date)
 );
@@ -56,18 +56,18 @@ CREATE TABLE Players(
     Position  varchar2(25),
     Team_Name varchar2(25),
     primary key (PNumber, Team_Name),
-    foreign key (Team_Name) references Teams(Team_Name),
+    foreign key (Team_Name) references Teams(Team_name)
 );
 
 -- Nathaniel Bevins
 -- Create Team_Plays Table
 CREATE TABLE Team_Plays (
-    Team_Name   varchar2(25),
-    Game_start  date,
+    Team_name   varchar2(25),
+    Game_start  varchar2(25),
     Game_loc    varchar2(25),
     Game_field  int,
     Game_date   date,
-    primary key (Team_Name, Game_start, Game_loc, Game_field, Game_date),
-    foreign key (Team_Name) references Teams(Team_Name),
+    primary key (Team_name, Game_start, Game_loc, Game_field, Game_date),
+    foreign key (Team_name) references Teams(Team_name),
     foreign key (Game_start, Game_loc, Game_field, Game_date) references Games(Start_time, Field_loc, Field_num, Game_date)
 );
