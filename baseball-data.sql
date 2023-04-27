@@ -20,22 +20,22 @@ INSERT INTO Teams VALUES
 
 -- Insert Statements for Coaches 
 INSERT INTO Coaches VALUES 
-  ('John Smith', 13, 'John Smith', 'Marlins');
+  ('John Smith', 13, 'Head Coach', 'Marlins');
 
 INSERT INTO Coaches VALUES 
-  ('Jane Smith', 3, 'Jane Smith', 'Marlins');
+  ('Jane Smith', 3, 'Pitching Coach', 'Marlins');
 
 INSERT INTO Coaches VALUES 
-  ('Joey Park', 5, 'Joey Park', 'Marlins');
+  ('Joey Park', 5, 'Outfield Coach', 'Marlins');
 
 INSERT INTO Coaches VALUES 
-  ('Sarah Josh', 7, 'Sarah Josh', 'Cougars');
+  ('Sarah Josh', 7, 'Head Coach', 'Cougars');
 
 INSERT INTO Coaches VALUES 
-  ('Tince Buggli', 8, 'Tince Muggli', 'Cougars');
+  ('Tince Buggli', 8, 'Pitching Coach', 'Cougars');
 
 INSERT INTO Coaches VALUES
-  ('Vana White', 9, 'Vana White', 'Bees');
+  ('Vana White', 9, 'Head Coach', 'Bees');
 
 -- Insert Statements for Vendors 
 INSERT INTO Vendors VALUES
