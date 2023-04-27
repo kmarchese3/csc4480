@@ -1,4 +1,4 @@
--- Create Games Table
+-- Games Table
 CREATE TABLE Games(
     Start_time varchar2(5),
     Field_loc varchar2(25),
@@ -43,7 +43,7 @@ CREATE TABLE Vendors(
     Game_location varchar2(25),
     Game_field int,
     Game_date date,
-    primary key (Vendors_name),
+    primary key (Vendor_name),
     foreign key (Game_start, Game_loc, Game_field, Game_date) references Games(Start_time, Field_loc, Field_num, Game_date)
 );
 
@@ -68,6 +68,6 @@ CREATE TABLE Team_Plays (
     Game_field  int,
     Game_date   date,
     primary key (Team_Name, Game_start, Game_loc, Game_field, Game_date),
-    oreign key (Team_Name) references Teams(Team_Name),
+    foreign key (Team_Name) references Teams(Team_Name),
     foreign key (Game_start, Game_loc, Game_field, Game_date) references Games(Start_time, Field_loc, Field_num, Game_date)
 );
