@@ -19,18 +19,19 @@ CREATE TABLE Teams(
     No_of_players int,
     Hometown varchar2(25),
     No_of_coahces int,
+    Manager_name varchar2(25),
     primary key (Team_name),
+    foreign key (Manager_name) references Coaches(Coaches_name)
 );
 
 -- Coaches Table
 CREATE TABLE Coaches(
     Coaches_name varchar2(25),
     Years_experience int,
-    Manager_name varchar2(25),
     Teams_name varchar2(25),
+    Position varchar2(25),
     primary key (Coaches_name),
     foreign key(Teams_name) references Teams(Team_Name)
-    foreign key(Manager_name) references(Coaches_name)
 );
 
 -- Vendors Table
