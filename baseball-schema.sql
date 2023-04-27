@@ -6,7 +6,6 @@ CREATE TABLE Games(
     Game_date Date,
     Time_limit int,
     Umpire varchar2(25),
-    Score varchar2(10),
     Home_team varchar2(25),
     Away_team varchar2(25),
     primary key (Start_time, Field_loc, Field_num, Game_date)
@@ -68,7 +67,7 @@ CREATE TABLE Team_Plays (
     Game_loc    varchar2(25),
     Game_field  int,
     Game_date   date,
-primary key (Team_Name, Game_start, Game_loc, Game_field, Game_date),
-foreign key (Team_Name) references Teams(Team_Name),
-foreign key (Game_start, Game_loc, Game_field, Game_date) references Games(Start_time, Field_loc, Field_num, Game_date)
+    primary key (Team_Name, Game_start, Game_loc, Game_field, Game_date),
+    oreign key (Team_Name) references Teams(Team_Name),
+    foreign key (Game_start, Game_loc, Game_field, Game_date) references Games(Start_time, Field_loc, Field_num, Game_date)
 );

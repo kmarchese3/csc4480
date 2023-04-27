@@ -1,6 +1,6 @@
 -- Insert Statements for Games
 INSERT INTO Games VALUES 
-  ('9:00','123 Springfield Ave, Springfield, NJ',3,'10-MAR-2023','2.5','James Smith','Cougars', 'Jaguars');
+  ('9:00','123 Springfield Ave, Springfield, NJ',3,'10-MAR-2023','2.5','James Smith', 'Cougars', 'Jaguars');
 
 INSERT INTO Games VALUES 
   ('10:00','456 West Ave, Houston, TX',2,'12-OCT-2022','2.5','James Johnston','Bees', 'Stingrays');
