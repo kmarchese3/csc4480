@@ -20,7 +20,6 @@ CREATE TABLE Teams(
     No_of_coahces int,
     Manager_name  varchar2(25),
     primary key (Team_name),
-    foreign key (Manager_name) references Coaches(Coaches_name)
 );
 
 -- Coaches Table
@@ -31,6 +30,11 @@ CREATE TABLE Coaches(
     Position     varchar2(25),
     primary key (Coaches_name),
     foreign key(Team_name) references Teams(Team_name)
+);
+
+--Add foreign key to Teams
+ALTER TABLE Teams ADD (
+    foreign key (Manager_name) references Coaches(Coaches_name)
 );
 
 -- Vendors Table
