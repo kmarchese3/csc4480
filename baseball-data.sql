@@ -39,13 +39,13 @@ INSERT INTO Coaches VALUES
 
 -- Insert Statements for Vendors 
 INSERT INTO Vendors VALUES
-  ('Pepsi', 3.50, 'soda', 'Providence, RI', '9:00', '123 Springfield Ave, Springfield, NJ', 3);
+  ('Pepsi', 3.50, 'soda', 'Providence, RI', '9:00', '123 Springfield Ave, Springfield, NJ', 3, '10-MAR-2023');
 
 INSERT INTO Vendors VALUES
-  ('Wawa', 6.00, 'sandwich', 'Philadelphia, PA', '10:00', '456 West Ave, Houston, TX', 2);
+  ('Wawa', 6.00, 'sandwich', 'Philadelphia, PA', '10:00', '456 West Ave, Houston, TX', 2, '12-OCT-2022');
 
 INSERT INTO Vendors VALUES
-  ('Burger King', 4.00, 'Fries', 'New York City, NY', '11:30', '892 Main St, Baltimore, MD', 1);
+  ('Burger King', 4.00, 'Fries', 'New York City, NY', '11:30', '892 Main St, Baltimore, MD', 1, '14-APR-2023');
 
 --Nathaniel Bevins
 --Insert Statements for Players
