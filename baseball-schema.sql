@@ -59,7 +59,7 @@ CREATE TABLE Players(
     Player_name     varchar2(25),
     Age             number(1),
     Position        varchar2(25),
-    primary key (PNumber, Team_Name),
+    primary key (Player_number, Team_Name),
     foreign key (Team_Name) references Teams(Team_name)
 );
 
