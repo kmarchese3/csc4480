@@ -18,23 +18,17 @@ CREATE TABLE Teams(
     No_of_players int,
     Hometown      varchar2(25),
     No_of_coahces int,
-    Manager_name  varchar2(25),
-    primary key (Team_name),
+    primary key (Team_name)
 );
 
 -- Coaches Table
 CREATE TABLE Coaches(
     Coaches_name varchar2(25),
     Years_exper  int,
-    Team_name    varchar2(25),
     Position     varchar2(25),
+    Team_name    varchar2(25),
     primary key (Coaches_name),
     foreign key(Team_name) references Teams(Team_name)
-);
-
---Add foreign key to Teams
-ALTER TABLE Teams ADD (
-    foreign key (Manager_name) references Coaches(Coaches_name)
 );
 
 -- Vendors Table
@@ -54,10 +48,10 @@ CREATE TABLE Vendors(
 -- Nathaniel Bevins
 -- Create Player Table
 CREATE TABLE Players(
-    Player_number   number(1) not null,
+    Player_number   number not null,
     Team_Name       varchar2(25),
     Player_name     varchar2(25),
-    Age             number(1),
+    Age             number,
     Position        varchar2(25),
     primary key (Player_number, Team_Name),
     foreign key (Team_Name) references Teams(Team_name)

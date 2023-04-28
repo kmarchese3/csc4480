@@ -50,11 +50,11 @@ INSERT INTO Vendors VALUES
 --Nathaniel Bevins
 --Insert Statements for Players
 INSERT INTO Players VALUES
-  (31, 'Cedric Mullins', 28, 'CF', 'Marlins');
+  (31, 'Marlins', 'Cedric Mullins', 28, 'CF');
 INSERT INTO Players VALUES
-  (5, 'Brooks Robinson', 29, '3B', 'Bees');
+  (5, 'Bees', 'Brooks Robinson', 29, '3B');
 INSERT INTO Players VALUES
-  (3, 'Babe Ruth', 31, 'P', 'Cougars');
+  (3, 'Cougars', 'Babe Ruth', 31, 'P');
 
 --Insert Statements for Team_Plays
 INSERT INTO Team_Plays VALUES
