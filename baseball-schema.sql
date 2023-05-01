@@ -1,3 +1,4 @@
+-- Kaylee Marchese
 -- Games Table
 CREATE TABLE Games(
     Start_time  varchar2(5),
@@ -11,6 +12,7 @@ CREATE TABLE Games(
     primary key (Start_time, Field_loc, Field_num, Game_date)
 );
 
+-- Kaylee Marchese
 -- Teams Table
 CREATE TABLE Teams(
     Team_name     varchar2(50),
