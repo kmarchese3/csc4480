@@ -17,3 +17,16 @@ FROM games g, players p, team_plays tp
 WHERE p.player_name = 'Babe Ruth' AND p.team_name = tp.team_name 
     AND tp.game_start = g.start_time AND tp.game_loc = g.field_loc 
     AND tp.game_field = g.field_num AND tp.game_date = g.game_date;
+
+-- Kaylee Marchese
+-- Find a vendor who sells sandwiches
+SELECT Vendor_name
+FROM Vendors
+WHERE product = 'sandwich';
+
+-- Kaylee Marchese
+-- Find the names of all head coaches in descending order
+SELECT distinct Coaches_name
+FROM Coaches
+WHERE position = 'Head Coach'
+ORDER BY Coaches_name desc;
