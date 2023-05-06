@@ -23,6 +23,7 @@ CREATE TABLE Teams(
     primary key (Team_name)
 );
 
+-- Erica Nicolelli
 -- Coaches Table
 CREATE TABLE Coaches(
     Coaches_name varchar2(50),
@@ -33,6 +34,7 @@ CREATE TABLE Coaches(
     foreign key(Team_name) references Teams(Team_name)
 );
 
+-- Erica Nicolelli
 -- Vendors Table
 CREATE TABLE Vendors(
     Vendor_name     varchar2(50),

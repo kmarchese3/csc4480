@@ -16,6 +16,7 @@ INSERT INTO Teams VALUES
 INSERT INTO Teams VALUES 
   ('Bees', 'Bee', 17, 'Boston, MA', 1);
 
+-- Erica Nicolelli
 -- Insert Statements for Coaches 
 INSERT INTO Coaches VALUES 
   ('John Smith', 13, 'Head Coach', 'Marlins');
@@ -35,6 +36,7 @@ INSERT INTO Coaches VALUES
 INSERT INTO Coaches VALUES
   ('Vana White', 9, 'Head Coach', 'Bees');
 
+-- Erica Nicolelli 
 -- Insert Statements for Vendors 
 INSERT INTO Vendors VALUES
   ('Pepsi', 3.50, 'soda', 'Providence, RI', '9:00', '123 Springfield Ave, Springfield, NJ', 3, '10-MAR-2023');
